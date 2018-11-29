@@ -1,0 +1,226 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "0.1",
+  "name": "WebinarMicrosoftLUIS",
+  "desc": "Hablando sobre Microsoft LUIS",
+  "culture": "es-es",
+  "intents": [
+    {
+      "name": "Compartir"
+    },
+    {
+      "name": "Lugar"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Participar"
+    },
+    {
+      "name": "Preguntar"
+    },
+    {
+      "name": "saludo"
+    }
+  ],
+  "entities": [
+    {
+      "name": "RedSocial",
+      "roles": []
+    },
+    {
+      "name": "TecnologiaNLP",
+      "roles": []
+    },
+    {
+      "name": "TipoEvento",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [
+    {
+      "name": "Pais",
+      "mode": true,
+      "words": "perú, colombia, méxico, bolivia, chile",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "patterns": [
+    {
+      "pattern": "tengo para compartir por {RedSocial} en el {TipoEvento}",
+      "intent": "Compartir"
+    }
+  ],
+  "utterances": [
+    {
+      "text": "buenas noches",
+      "intent": "saludo",
+      "entities": []
+    },
+    {
+      "text": "buenos dias",
+      "intent": "saludo",
+      "entities": []
+    },
+    {
+      "text": "el webinar será en colombia",
+      "intent": "Lugar",
+      "entities": []
+    },
+    {
+      "text": "el webinar será en méxico",
+      "intent": "Lugar",
+      "entities": []
+    },
+    {
+      "text": "el webinar sera en perú",
+      "intent": "Lugar",
+      "entities": []
+    },
+    {
+      "text": "estoy interesado en compartir por el grupo de facebook",
+      "intent": "Compartir",
+      "entities": [
+        {
+          "entity": "RedSocial",
+          "startPos": 46,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "estoy interesado en el conferencia",
+      "intent": "Participar",
+      "entities": [
+        {
+          "entity": "TipoEvento",
+          "startPos": 23,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "estoy interesado en el webinar",
+      "intent": "Participar",
+      "entities": [
+        {
+          "entity": "TipoEvento",
+          "startPos": 23,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "hola",
+      "intent": "saludo",
+      "entities": []
+    },
+    {
+      "text": "que beneficios obtengo usando dialogflow",
+      "intent": "Preguntar",
+      "entities": [
+        {
+          "entity": "TecnologiaNLP",
+          "startPos": 30,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "que beneficios obtengo usando luis",
+      "intent": "Preguntar",
+      "entities": [
+        {
+          "entity": "TecnologiaNLP",
+          "startPos": 30,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "que es dialogfow",
+      "intent": "Preguntar",
+      "entities": [
+        {
+          "entity": "TecnologiaNLP",
+          "startPos": 7,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "que es luis",
+      "intent": "Preguntar",
+      "entities": [
+        {
+          "entity": "TecnologiaNLP",
+          "startPos": 7,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "quiero asistir a la conferencia online",
+      "intent": "Participar",
+      "entities": [
+        {
+          "entity": "TipoEvento",
+          "startPos": 20,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "quiero asistir al webinar",
+      "intent": "Participar",
+      "entities": [
+        {
+          "entity": "TipoEvento",
+          "startPos": 18,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "quiero escribir en medium",
+      "intent": "Compartir",
+      "entities": [
+        {
+          "entity": "RedSocial",
+          "startPos": 19,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "tengo material para compartir en facebook",
+      "intent": "Compartir",
+      "entities": [
+        {
+          "entity": "RedSocial",
+          "startPos": 33,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "voy a compartir su twitter",
+      "intent": "Compartir",
+      "entities": [
+        {
+          "entity": "RedSocial",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    }
+  ],
+  "settings": []
+}
